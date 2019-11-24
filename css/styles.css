@@ -104,6 +104,71 @@ body{
     content: '\e802';
 }
 
+/*--------------------------*/
+/*--- - - - Кнопки - - - ---*/
+/*--------------------------*/
+.button{
+    display: inline-block;
+    min-width: 200px;
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 12px 0;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all .5s;
+}
+.button_style_1{
+    color: #fff;
+    background-color: var(--color-comp-pink);
+    border: 2px solid var(--color-comp-pink);
+}
+.button_style_2{
+    color: var(--color-comp-pink);
+    border: 2px solid var(--color-comp-pink);
+}
+.button_style_3{
+    background-color: var(--color-comp-dark);
+    color: #fff;
+    border: 2px solid var(--color-comp-dark);
+}
+.button_style_4{
+    background-color: #fff;
+    color: var(--color-comp-dark);
+    border: 2px solid var(--color-comp-dark);
+}
+
+.button_style_1 span,
+.button_style_2 span{
+    color: var(--color-comp-dark);
+}
+.button_style_3 span,
+.button_style_4 span{
+    color: var(--color-comp-pink);
+}
+
+.button_style_1:hover{
+    background-color: #fff;
+    color: var(--color-comp-pink);
+}
+.button_style_1:hover span{
+    color: var(--color-comp-pink);
+}
+.button_style_2:hover{
+    background-color: var(--color-comp-pink);
+    color: #fff;
+}
+.button_style_3:hover{
+    background-color: #fff;
+    color: var(--color-comp-dark);
+}
+.button_style_4:hover{
+    background-color: var(--color-comp-dark);
+    color: #fff;
+}
 
 /*-------------------------------------*/
 /*--- - - - Стили шапки сайта - - - ---*/
