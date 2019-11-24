@@ -13,6 +13,22 @@ window.addEventListener('load', () => {
         '1200': window.matchMedia('(max-width: 1200px)').matches
     }
     const slickElements = {
+        benefitsBlock: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            centerMode: true,
+            arrows: false,
+            dots: true,
+            centerPadding: '0px',
+            responsive: [
+                {
+                    breakpoint: 501,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        },
         courseListBlock: {
             slidesToShow: 2,
             slidesToScroll: 1,
@@ -28,8 +44,30 @@ window.addEventListener('load', () => {
                     }
                 }
             ]
+        },
+        reviewsListBlock: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            centerMode: true,
+            arrows: false,
+            dots: true,
+            centerPadding: '0px'
         }
     }
 
+    if (device[768]) $('.benefits_list_block').slick(slickElements.courseListBlock);
     if (device[768]) $('.course_list_block').slick(slickElements.courseListBlock);
+    if (device[768]) $('.reviews_list_block').slick(slickElements.reviewsListBlock);
+
+    $('.vacancy_list_block').masonry({
+        itemSelector: '.vacancy_list_block > div',
+        gutter: 30,
+        fitWidth: true
+    });
+
+    $('.team_list_block').masonry({
+        itemSelector: '.team_list_item',
+        gutter: 30,
+        fitWidth: true
+    });
 })
