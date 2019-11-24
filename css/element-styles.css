@@ -168,6 +168,7 @@
 .info_block{
     padding: 30px;
     font-size: 1rem;
+    box-sizing: border-box;
 }
 .info_block .title{
     font-size: 1.2em;
@@ -206,4 +207,22 @@
 }
 .benefits_list_item .content{
     color: var(--color-text-help-1);
+}
+
+/*--- - - - Блок с вакансиями - - - ---*/
+.vacancy_list_block > div{
+    width: 31%;
+    margin:0 auto 30px auto;
+}
+
+@media screen and (max-width: 768px) {
+    .vacancy_list_block > div{
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .vacancy_list_block > div{
+        width: 100%;
+    }
 }

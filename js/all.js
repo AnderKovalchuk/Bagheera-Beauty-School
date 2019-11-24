@@ -32,4 +32,10 @@ window.addEventListener('load', () => {
     }
 
     if (device[768]) $('.course_list_block').slick(slickElements.courseListBlock);
+
+    $('.vacancy_list_block').masonry({
+        itemSelector: '.vacancy_list_block > div',
+        gutter: 30,
+        fitWidth: true
+    });
 })
