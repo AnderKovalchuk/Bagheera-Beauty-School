@@ -13,6 +13,22 @@ window.addEventListener('load', () => {
         '1200': window.matchMedia('(max-width: 1200px)').matches
     }
     const slickElements = {
+        benefitsBlock: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            centerMode: true,
+            arrows: false,
+            dots: true,
+            centerPadding: '0px',
+            responsive: [
+                {
+                    breakpoint: 501,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        },
         courseListBlock: {
             slidesToShow: 2,
             slidesToScroll: 1,
@@ -31,6 +47,7 @@ window.addEventListener('load', () => {
         }
     }
 
+    if (device[768]) $('.benefits_list_block').slick(slickElements.courseListBlock);
     if (device[768]) $('.course_list_block').slick(slickElements.courseListBlock);
 
     $('.vacancy_list_block').masonry({

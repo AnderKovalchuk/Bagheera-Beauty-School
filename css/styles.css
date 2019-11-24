@@ -72,6 +72,29 @@ body{
     margin-right: auto;
 }
 
+.block_main_sitebar{
+    display: flex;
+    align-items: center;
+}
+.block_main_sitebar > div:nth-child(1){
+    flex-basis: 60%;
+}
+.block_main_sitebar > div:nth-child(2){
+    flex-basis: 40%;
+    flex-grow: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .block_main_sitebar{
+        flex-direction: column;
+    }
+    .block_main_sitebar > div:nth-child(1){
+        flex-basis: 100%;
+    }
+    .block_main_sitebar > div:nth-child(2){
+        flex-basis: 100%;
+    }
+}
 @media screen and (max-width: 1200px){
     .block_main_wrap{
         width: 95%;
