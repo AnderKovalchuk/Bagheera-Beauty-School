@@ -172,6 +172,7 @@
 }
 .info_block .title{
     font-size: 1.2em;
+    margin-bottom: 0;
 }
 .info_block .sub_title{
     font-weight: bold;
@@ -184,6 +185,11 @@
 }
 .info_block .content p:not(:last-child){
     margin-bottom: 5px;
+}
+.info_block .content p,
+.info_block .title p,
+.info_block .accent p{
+    text-indent: 0;
 }
 
 .info_block_style_1,
