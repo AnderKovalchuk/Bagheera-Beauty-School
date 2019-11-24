@@ -239,9 +239,28 @@
     margin:0 auto 30px auto;
 }
 
-
+/*--- - - - Блок с отзывами - - - ---*/
+.reviews_list_block{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.reviews_list_item_hwo{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.reviews_list_item_hwo figure{
+    width: 55px;
+    flex-grow: 0;
+    margin-right: 15px; 
+}
+.reviews_list_item_hwo figure image{
+    width: 100%;
+}
 @media screen and (max-width: 768px) {
-    .benefits_list_block{
+    .benefits_list_block,
+    .reviews_list_block{
         grid-template-columns: 1fr;
     }
 

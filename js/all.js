@@ -44,11 +44,20 @@ window.addEventListener('load', () => {
                     }
                 }
             ]
+        },
+        reviewsListBlock: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            centerMode: true,
+            arrows: false,
+            dots: true,
+            centerPadding: '0px'
         }
     }
 
     if (device[768]) $('.benefits_list_block').slick(slickElements.courseListBlock);
     if (device[768]) $('.course_list_block').slick(slickElements.courseListBlock);
+    if (device[768]) $('.reviews_list_block').slick(slickElements.reviewsListBlock);
 
     $('.vacancy_list_block').masonry({
         itemSelector: '.vacancy_list_block > div',
