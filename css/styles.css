@@ -127,6 +127,7 @@ body{
     border: 2px solid var(--color-comp-pink);
 }
 .button_style_2{
+    background-color: #fff;
     color: var(--color-comp-pink);
     border: 2px solid var(--color-comp-pink);
 }
@@ -170,6 +171,21 @@ body{
     color: #fff;
 }
 
+/*----------------------------------*/
+/*--- - - - Элементы формы - - - ---*/
+/*----------------------------------*/
+.form input[type="text"],
+.form input[type="tel"]{
+    margin-bottom: 15px;
+    padding: 15px 30px;
+    color: var(--color-text-main);
+    background-color: #f7f7f7;
+    border: none;
+    font-size: 12px;
+}
+.form button{
+    outline: 0;
+}
 /*-------------------------------------*/
 /*--- - - - Стили шапки сайта - - - ---*/
 /*-------------------------------------*/
@@ -549,4 +565,60 @@ body{
     .baner_slide_content .title{
         margin-bottom: 30px;
     }
+}
+
+/*----------------------------------------------------*/
+/*--- - - - Оформление блоков с сообщениями  - - - ---*/
+/*----------------------------------------------------*/
+.message_block{
+    font-size: 1rem;
+}
+.message_block .sub_title{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.message_block .title{
+    font-size: 1.6em;
+}
+.message_block .content{
+    padding: 15px 0;
+}
+
+.message_block_style_1{
+    display: flex;
+    color: #fff;
+}
+.message_block_style_1 > div{
+    box-sizing: border-box;
+    flex-basis: 50%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+.message_block_style_1 > div:nth-child(1){
+    background-color: var(--color-comp-pink);
+}
+.message_block_style_1 > div:nth-child(2){
+    align-items: flex-end;
+    text-align: right;
+    background-color: var(--color-comp-dark);
+}
+
+.message_block_style_2,
+.message_block_style_3{
+    text-align: center;
+}
+.message_block_style_2 .sub_title{
+    font-size: 1em;
+}
+.message_block_style_2 button{
+    display: block;
+    margin: 0 auto;
+}
+
+.message_block_style_3 input{
+    border-radius: 20px;
+    margin-right: 15px;
 }
