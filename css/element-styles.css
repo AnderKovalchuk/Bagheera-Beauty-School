@@ -1,0 +1,162 @@
+/*-----------------------------------------------*/
+/*--- - - - Оформление блоков с курсами - - - ---*/
+/*-----------------------------------------------*/
+.course_list_block,
+.course_all_list_block{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+@media screen and (max-width: 1200px){
+    .course_list_block,
+    .course_all_list_block{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (max-width: 768px) {
+    .course_list_block{
+        grid-template-columns: 1fr;
+    }
+    .course_all_list_block{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 500px) {
+    .course_all_list_block{
+        grid-template-columns: 1fr;
+    }
+}
+
+/*--- - - - Стили карточки курса - - - ---*/
+.course_list_item{
+    position: relative;
+    border: 1px solid var(--color-help-element-light);
+}
+
+.course_list_item img{
+    width: 100%;
+}
+.course_list_item ul{
+    list-style: none;
+}
+.course_list_item li{
+    margin-bottom: 5px;
+}
+.course_list_item li::before{
+    font-family: Icon;
+    content: '\f105';
+    margin-right: 10px;
+    margin-bottom: 5px;
+    color: var(--color-comp-pink);
+}
+.course_list_item_content a:not([class*='button']),
+.course_list_item_more a{
+    font-weight: bold;
+    text-decoration: none;
+    color: initial;
+}
+.course_list_item_content a:not([class*='button']):hover,
+.course_list_item_more a:hover{
+    text-decoration: underline;
+    color: var(--color-comp-pink);
+}
+
+.course_list_item_head{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    height: 100%;
+    text-decoration: none;
+    color: initial;
+}
+.course_list_item_head .title{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.course_list_item_head .title h3{
+    padding: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--color-text-accent);
+    text-align: center;
+}
+.course_list_item_head .content{
+    padding: 0 15px 15px 15px;
+    text-align: center;
+}
+
+.course_list_item_more{
+    display: none;
+    padding-top: 15px;
+    text-align: center;
+}
+.course_list_item_more a::after{
+    font-family: Icon;
+    content: '\f107';
+    padding: 0 10px;
+}
+@media handheld and (max-width: 768px){
+    .course_list_item_more{
+        display: block;
+    }
+}
+
+.course_list_item_content{
+    display: none;
+    padding: 15px;
+    border: inherit;
+    border-top: none;
+    z-index: 2;
+}
+@media screen and (min-width: 768px){
+    .course_list_item:hover .course_list_item_content{
+        display: block;
+        position: absolute;
+        left: -1px;
+        right: -1px;
+        margin-top: -15px;
+        background-color: #fff;
+    }
+}
+
+.course_list_item_link{
+    padding-top: 15px;
+    text-align: center;
+}
+
+.contact_block{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 15px;
+    text-align: center;
+    color: var(--color-text-accent);
+    border-top: 1px solid var(--color-help-element-light);
+}
+.contact_block p{
+    padding-bottom: 5px;
+}
+.contact_block .tel{
+    font-size: 1.5em;
+}
+
+.contact_form{
+    text-align: centers;
+}
+.contact_form form{
+    margin-top: 15px;
+}
+.contact_form form input{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.course_content_image img{
+    padding-right: 30px;
+    width: 100%;
+}
