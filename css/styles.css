@@ -1,0 +1,63 @@
+@font-face {
+    font-family: Lato;
+    src: url("../fonts/latoregular.woff") format("woff");
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: Lato;
+    src: url("../fonts/latoitalic.woff") format("woff");
+    font-weight: 200;
+    font-style: italic;
+}
+@font-face {
+    font-family: Lato;
+    src: url("../fonts/latoheavy.woff") format("woff");
+    font-weight: 700;
+    font-style: bold;
+}
+@font-face {
+    font-family: Lato;
+    src: url("../fonts/latoheavy.woff") format("woff");
+    font-weight: 700;
+    font-style: bold;
+}
+@font-face{
+    font-family: Icon;
+    src: url("../fonts/icons.woff") format("woff");
+    font-weight: 200;
+    font-style: normal;
+}
+
+:root{
+    --main-font: Lato;
+
+    --color-text-main: #082e47;
+    --color-text-help-1: #6a6a6a;
+    --color-text-help-2: #818189;
+
+    --color-comp-pink: #dd2784;
+    --color-comp-dark: #1e0e2c;
+
+    --color-help-element-light: #d8e3ee; 
+    --color-help-element-dark: #1d1f22;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+html{
+    font-family: var(--main-font);
+    font-size: 14px;
+    color: var(--color-text-main);
+    font-weight: 200;
+    line-height: normal;
+}
+body{
+    font-size: 14px;
+}
