@@ -1,20 +1,178 @@
 <!DOCTYPE html>
 
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    
+
     <title>Главная</title>
 
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/element-styles.css">
-    <link rel="stylesheet" href="/css/content-styles.css">
-    <link rel="stylesheet" href="/css/animation.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/element-styles.css">
+    <link rel="stylesheet" href="css/content-styles.css">
+    <link rel="stylesheet" href="css/animation.css">
 
-    <script src="/js/all.js" defer></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript" defer></script>
+    <script src="js/all.js" type="text/javascript" defer></script>
 </head>
-<body>
 
+<body>
+    <header class="block_main_wrap main_header">
+        <nav class="main_header_nav">
+            <ul class="main_header_nav_help">
+                <li><a href="#" class="main_header_nav_help_active">Наша команда</a></li>
+                <li><a href="#">Отзывы клиентов</a></li>
+                <li><a href="#">Статьи</a></li>
+                <li><a href="#">Вакансии</a></li>
+            </ul>
+            <ul class="main_header_nav_main">
+                <li><a href="#" class="main_header_nav_main_active">Главная</a></li>
+                <li class="menu_main_fall_out">
+                    <a href="#">Чему мы учим</a>
+                    <span class="icon icon_control_down"></span>
+                    <div>
+                        <ul>
+                            <li><a href="#">Курсы маникюра</a></li>
+                            <li><a href="#">Курсы причесок</a></li>
+                            <li><a href="#">Курс бровист</a></li>
+                            <li><a href="#">Курс перманентный макияж</a></li>
+                            <li><a href="#">Курс шугарина + бикини дизайн</a></li>
+                            <li><a href="#">Курс «Наращивание ногтей гелем. Акрилом + дизайн»</a></li>
+                            <li><a href="#">Курс «визажист»</a></li>
+                            <li><a href="#">Курс «визажист»</a></li>
+                            <li><a href="#">Курс сам себе мастер</a></li>
+                            <li><a href="#">Курс депиляции</a></li>
+                            <li><a href="#">Курсы наращивание ногтей</a></li>
+                            <li><a href="#">Курс свадебный стилист</a></li>
+                            <li><a href="#">Курс ламинирования бровей</a></li>
+                            <li><a href="#">Курс наращивание ресниц</a></li>
+                            <li><a href="#">Курсы парикмахеров</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Отзывы учеников</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Эконом услуги</a></li>
+            </ul>
+        </nav>
+        <div class="main_header_mobile">
+            <div class="main_header_mobile_icon">
+                <a href="#" class="icon icon_mobile"></a>
+            </div>
+        </div>
+        <div class="main_header_utility">
+            <ul class="main_header_utility_social">
+                <li><a href="#" class="icon icon_instagram"></a></li>
+                <li><a href="#" class="icon icon_facebook"></a></li>
+                <li><a href="#" class="icon icon_twitter"></a></li>
+            </ul>
+            <div class="main_header_utility_phone">
+                <div class="icon icon_phone"></div>
+                <div>
+                    <p>068 987 91 70</p>
+                    <p>073 135 67 05</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="block_main_wrap main_baner">
+        <div class="main_baner_slide block_text_light" style="background-image: url('images/slide_1.jpg');">
+            <div class="baner_slide_content light">
+                <div class="sub_title">
+                    <p>Школа красоты багира</p>
+                </div>
+                <div class="title">
+                    <h3>Мы научим Вас делать людей красивыми</h3>
+                </div>
+                <div>
+                    <a href="#" class="button button_style_1">Оставить заявку</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section>
+            <div class="block_main_wrap" style="margin: 30px auto;">
+                <a href="#" class="button button_style_1">Оставить заявку</a>
+                <a href="#" class="button button_style_2">Оставить заявку</a>
+                <a href="#" class="button button_style_3">Оставить заявку</a>
+                <a href="#" class="button button_style_4">Оставить заявку</a>
+            </div>
+            <div class="block_main_wrap" style="margin: 30px auto;">
+                <a href="#" class="button button_style_1">Оставить <span>заявку</span></a>
+                <a href="#" class="button button_style_2">Оставить <span>заявку</span></a>
+                <a href="#" class="button button_style_3">Оставить <span>заявку</span></a>
+                <a href="#" class="button button_style_4">Оставить <span>заявку</span></a>
+            </div>
+        </section>
+
+        <section class="block_main_wrap message_block message_block_style_1" style="margin-bottom: 30px;">
+            <div>
+                <p class="sub_title">Маникюр или стрижка в салоне - слишком дорого?</p>
+                <h2 class="title">Красота теперь доступна всем</h2>
+                <div class="content">
+                    <p>Вы нигде больше не найдёте таких цен!</p>
+                </div>
+            </div>
+            <div>
+                <p class="sub_title">В нашем салоне красоты Багира цены минимальны, а обслуживание - качественное!</p>
+                <div class="content">
+                    <p>Нужен вечерний макияж, причёска или маникюр? - Легко!</p>
+                </div>
+                <a href="#" class="button button_style_2">Смотреть <span>цены</span></a>
+            </div>
+        </section>
+        <section class="block_main_wrap message_block message_block_style_2" style="margin-bottom: 30px;">
+            <h2 class="title">Хотите на курс?</h2>
+            <p class="sub_title">Оставьте свои контакты и мы с вами свяжемся </p>
+            <form class="content form form_style_1">
+                <input type="text" placeholder="Ваше имя">
+                <input type="tel" id="telephone" placeholder="+38(0__)__-__-___">
+                <button class="button button_style_4">
+                    Записатся <span> на курс</span>
+                </button>
+            </form>
+        </section>
+        <section class="block_main_wrap message_block message_block_style_3" style="margin-bottom: 30px;">
+            <h2 class="title">Хотите на курс?</h2>
+            <p class="sub_title">Оставьте свои контакты и мы с вами свяжемся </p>
+            <form class="content form form_style_1">
+                <input type="text" placeholder="Ваше имя">
+                <input type="tel" id="telephone" placeholder="+38(0__)__-__-___">
+                <button class="button button_style_4">
+                    Записатся <span> на курс</span>
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="main_footer">
+        <div class="block_main_wrap">
+            <div class="main_footer_copyright">
+                <p>© 2019 Багира. All Rights Reserved.</p>
+            </div>
+            <nav class="main_footer_nav">
+                <ul>
+                    <li><a href="#">главная</a></li>
+                    <li><a href="#">о нас</a></li>
+                    <li><a href="#">эконом услуги</a></li>
+                    <li><a href="#">отзывы учеников</a></li>
+                    <li><a href="#">чему мы учим</a></li>
+                    <li><a href="#">контакты</a></li>
+                </ul>
+            </nav>
+            <div class="main_footer_social">
+                <ul>
+                    <li><a href="#" class="icon icon_instagram"></a></li>
+                    <li><a href="#" class="icon icon_facebook"></a></li>
+                    <li><a href="#" class="icon icon_twitter"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
