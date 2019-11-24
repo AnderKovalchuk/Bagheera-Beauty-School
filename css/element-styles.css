@@ -160,3 +160,50 @@
     padding-right: 30px;
     width: 100%;
 }
+
+
+/*----------------------------------------------------*/
+/*--- - - - Оформление информационных блоков - - - ---*/
+/*----------------------------------------------------*/
+.info_block{
+    padding: 30px;
+    font-size: 1rem;
+}
+.info_block .title{
+    font-size: 1.2em;
+}
+.info_block .sub_title{
+    font-weight: bold;
+}
+.info_block .content{
+    margin-top: 15px;
+}
+
+.info_block_style_1,
+.info_block_style_2{
+    border: 1px solid var(--color-help-element-light);
+}
+.info_block_style_2{
+    text-align: center;
+}
+
+/*--- - - - Блок с преимуществами - - - ---*/
+.benefits_list_item{
+    position: relative;
+    margin-top: 30px;
+}
+.benefits_list_item figure{
+    position: absolute;
+    top: -25px;
+    width: calc(100% - 60px);
+    height: 50px;
+    margin: 0 auto;
+}
+.benefits_list_item img{
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+}
+.benefits_list_item .content{
+    color: var(--color-text-help-1);
+}
