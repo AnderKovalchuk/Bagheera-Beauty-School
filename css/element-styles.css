@@ -179,6 +179,9 @@
 .info_block .content{
     margin-top: 15px;
 }
+.info_block .content p:not(:last-child){
+    margin-bottom: 5px;
+}
 
 .info_block_style_1,
 .info_block_style_2{
@@ -214,6 +217,22 @@
     color: var(--color-text-help-1);
 }
 
+/*--- - - - Блок с командой - - - ---*/
+.team_list_item{
+    width: 48%;
+    display: flex;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+.team_list_item figure{
+    width: 150px;
+    flex-grow: 0;
+    margin-right: 15px;
+}
+.team_list_item figure img{
+    width: 100%;
+}
+
 /*--- - - - Блок с вакансиями - - - ---*/
 .vacancy_list_block > div{
     width: 31%;
@@ -224,6 +243,10 @@
 @media screen and (max-width: 768px) {
     .benefits_list_block{
         grid-template-columns: 1fr;
+    }
+
+    .team_list_item{
+        width: 100%;
     }
 
     .vacancy_list_block > div{

@@ -55,4 +55,10 @@ window.addEventListener('load', () => {
         gutter: 30,
         fitWidth: true
     });
+
+    $('.team_list_block').masonry({
+        itemSelector: '.team_list_item',
+        gutter: 30,
+        fitWidth: true
+    });
 })
