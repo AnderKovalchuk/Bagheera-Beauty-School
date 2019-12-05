@@ -15,6 +15,7 @@
 .section_content p{
     margin-bottom: 5px;
     text-indent: 15px;
+    line-height: 1.5em;
 }
 
 .section_content .list_title{
@@ -34,7 +35,32 @@
     border-bottom:  1px solid var(--color-help-element-light);
 }
 
-.grid_s_2{
+.section_content table{
+    margin-bottom: 30px;
+    border: 3px solid var(--color-help-element-light);
+    border-spacing: 0;
+}
+.section_content table tr:nth-child(2n+1){
+    background-color: var(--color-help-element-light);
+}
+.section_content table td{
+    padding: 5px 15px;
+}
+.section_content table thead{
+    vertical-align: middle;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: left;
+}
+.section_content table thead th{
+    padding: 15px;
+    background-color: #fff;
+}
+
+
+
+.grid_s_2,
+.grid_m_2{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
@@ -50,6 +76,10 @@
     gap: 30px;
 }
 @media screen and (max-width: 768px){
+    .grid_m_2{
+        grid-template-columns: 1fr;
+    }
+
     .grid_s_3{
         gap: 15px;
     }
